@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_ocr"
+            android:icon="@drawable/ic_ocr"
+            android:title="@string/feature1" />
+        <item
+            android:id="@+id/nav_attendance"
+            android:icon="@drawable/ic_attendance"
+            android:title="@string/feature2" />
+        <item
+            android:id="@+id/nav_diet"
+            android:icon="@drawable/ic_diet"
+            android:title="@string/feature3" />
+        <item
+            android:id="@+id/nav_object"
+            android:icon="@drawable/ic_object"
+            android:title="@string/feature4" />
+    </group>
+</menu>
