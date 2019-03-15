@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Drishti</string>
     <string name="feature1">OCR</string>
-    <string name="feature2">Attendance</string>
+    <string name="feature2">SmartAlarm</string>
     <string name="feature3">Diet Tracker</string>
     <string name="feature4">Object Recognition</string>
 
@@ -17,4 +17,12 @@
     <string name="ocr_success">Text read successfully</string>
     <string name="ocr_failure">No text captured</string>
     <string name="ocr_error">"Error reading text: %1$s"</string>
+    <string name="button_text_alarm">Take Photo</string>
+    <string name="object_hint">Object to look for</string>
+    <string name="date_hint">Alarm date:YYYY-MM-DD</string>
+    <string name="hour_hint">Alarm Hour (24hr system)</string>
+    <string name="title_activity_alarm">AlarmActivity</string>
+    <string name="button_text_main">Set Alarm</string>
+    <string name="minute_hint">Alarm Minute</string>
+    <string name="info_text_default">Loading…</string>
 </resources>
