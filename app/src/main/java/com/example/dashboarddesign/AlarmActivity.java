@@ -1,5 +1,6 @@
 package com.example.dashboarddesign;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.media.RingtoneManager;
@@ -7,11 +8,15 @@ import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.content.FileProvider;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 import android.Manifest;
+import android.widget.Toast;
 
 import java.io.File;
 import java.io.IOException;
@@ -36,9 +41,9 @@ public class AlarmActivity extends AppCompatActivity {
 
 
         protected Boolean doInBackground(File... images) {
-            info.setText("Processing...");
+//            info.setText("Processing...");
 
-            ClarifaiClient client = new ClarifaiBuilder("84876ad93a584775b27fe78cff227370").buildSync();
+            ClarifaiClient client = new ClarifaiBuilder(getResources().getString(R.string.clarifai_api_key)).buildSync();
             List<ClarifaiOutput<Concept>> predictionResults;
 
             for (File image : images) {
@@ -49,9 +54,12 @@ public class AlarmActivity extends AppCompatActivity {
 
                 for (ClarifaiOutput<Concept> result : predictionResults) {
                     for (Concept datum : result.data()) {
-
+                        Log.i("clarifai",datum.name());
                         if (datum.name().contains(object.toLowerCase()))
+                        {
+
                             return true;
+                        }
                     }
                 }
             }
@@ -66,9 +74,13 @@ public class AlarmActivity extends AppCompatActivity {
 
             // If image contained object, close the AlarmActivity
             if (result) {
+                Toast.makeText(getApplicationContext(),"GOOD MORNING!",Toast.LENGTH_LONG).show();
                 info.setText("Success!");
                 finish();
-            } else info.setText("Try again...");
+            } else {
+                Toast.makeText(getApplicationContext(),"TRY AGAIN!!!",Toast.LENGTH_LONG).show();
+                info.setText("Try again...");
+            }
         }
     }
 
@@ -84,6 +96,7 @@ public class AlarmActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
+
         Uri myUri = RingtoneManager.getActualDefaultRingtoneUri(this, RingtoneManager.TYPE_RINGTONE);
         mediaPlayer = new MediaPlayer();
 
@@ -134,7 +147,7 @@ public class AlarmActivity extends AppCompatActivity {
             }
 
             Uri photoURI = FileProvider.getUriForFile(this,
-                    "com.mkhrenov.clarifaialarm.fileprovider",
+                    "com.example.clarifaialarm.fileprovider",
                     photoFile);
             takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, photoURI);
             startActivityForResult(takePictureIntent, REQUEST_TAKE_PHOTO);

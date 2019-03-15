@@ -9,6 +9,10 @@ package="com.example.dashboarddesign" >
 <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
 <uses-feature
+    android:name="android.hardware.camera.any"
+    android:required="true" />
+
+<uses-feature
     android:name="android.hardware.camera"
     android:required="false" />
 <uses-feature
@@ -18,11 +22,6 @@ package="com.example.dashboarddesign" >
     android:name="android.hardware.camera.flash"
     android:required="false" />
 
-<uses-permission android:name="android.permission.CAMERA" />
-
-    <!--<uses-permission-->
-        <!--android:name="android.permission.WRITE_EXTERNAL_STORAGE"-->
-        <!--android:maxSdkVersion="18" />-->
 
 <application
     android:allowBackup="true"
@@ -47,7 +46,7 @@ package="com.example.dashboarddesign" >
 
     <provider
         android:name="android.support.v4.content.FileProvider"
-        android:authorities="com.mkhrenov.clarifaialarm.fileprovider"
+        android:authorities="com.example.clarifaialarm.fileprovider"
         android:exported="false"
         android:grantUriPermissions="true">
         <meta-data
