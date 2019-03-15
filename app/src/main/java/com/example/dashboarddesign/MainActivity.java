@@ -48,6 +48,11 @@ public class MainActivity extends AppCompatActivity {
                                 Intent i = new Intent(MainActivity.this, OcrCaptureActivity.class);
                                 startActivity(i);
                                 break;
+                            case R.id.nav_attendance:
+                                Log.i(TAG,"Alarm");
+                                Intent it = new Intent(MainActivity.this, StartActivity.class);
+                                startActivity(it);
+                                break;
 
                         }
 
@@ -81,6 +86,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void ocr(View view){
         Intent i = new Intent(this, OcrCaptureActivity.class);
+        startActivity(i);
+    }
+
+    public void alarmer(View view){
+        Intent i = new Intent(this, StartActivity.class);
         startActivity(i);
     }
 }
