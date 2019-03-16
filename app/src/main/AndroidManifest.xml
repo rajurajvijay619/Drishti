@@ -7,6 +7,7 @@ package="com.example.dashboarddesign" >
 <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.CAMERA" />
 
 <uses-feature
     android:name="android.hardware.camera.any"
@@ -42,7 +43,9 @@ package="com.example.dashboarddesign" >
     <activity android:name="com.google.android.gms.samples.vision.ocrreader.OcrCaptureActivity" />
     <activity android:name="com.example.dashboarddesign.AlarmActivity" />
     <activity android:name="com.example.dashboarddesign.StartActivity" />
-
+    <activity
+        android:screenOrientation="portrait"
+        android:name="org.tensorflow.lite.examples.classification.ClassifierActivity"/>
 
     <provider
         android:name="android.support.v4.content.FileProvider"

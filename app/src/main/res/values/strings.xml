@@ -26,4 +26,15 @@
     <string name="minute_hint">Alarm Minute</string>
     <string name="info_text_default">Loading…</string>
     <string name="clarifai_api_key">84876ad93a584775b27fe78cff227370</string>
+
+
+    <string name="description_info">Info</string>
+    <string name="request_permission">This app needs camera permission.</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+    <string name="toggle_turn_on">NN:On</string>
+    <string name="toggle_turn_off">NN:Off</string>
+    <string name="toggle">Use NNAPI</string>
+    <string name="tflite">tflite</string>
+    <string name="nnapi">NNAPI</string>
+    <string name="threads">Threads:</string>
 </resources>

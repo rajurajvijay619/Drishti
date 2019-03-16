@@ -15,6 +15,8 @@ import android.widget.Button;
 
 import com.google.android.gms.samples.vision.ocrreader.OcrCaptureActivity;
 
+import org.tensorflow.lite.examples.classification.ClassifierActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     private static  final  String TAG = "MAIN ACTIVITY";
@@ -52,6 +54,11 @@ public class MainActivity extends AppCompatActivity {
                                 Log.i(TAG,"Alarm");
                                 Intent it = new Intent(MainActivity.this, StartActivity.class);
                                 startActivity(it);
+                                break;
+                            case R.id.nav_object:
+                                Log.i(TAG,"Object recognition");
+                                Intent itt = new Intent(MainActivity.this, ClassifierActivity.class);
+                                startActivity(itt);
                                 break;
 
                         }
