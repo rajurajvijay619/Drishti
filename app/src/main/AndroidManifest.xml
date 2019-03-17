@@ -46,6 +46,7 @@ package="com.example.dashboarddesign" >
     <activity
         android:screenOrientation="portrait"
         android:name="org.tensorflow.lite.examples.classification.ClassifierActivity"/>
+    <activity android:name="com.example.android.tflitecamerademo.CameraActivity"/>
 
     <provider
         android:name="android.support.v4.content.FileProvider"

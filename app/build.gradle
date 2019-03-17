@@ -1,5 +1,10 @@
 apply plugin: 'com.android.application'
 
+project.ext.ASSET_DIR = projectDir.toString() + '/src/main/assets'
+
+assert file(project.ext.ASSET_DIR + "/graph.lite").exists()
+assert file(project.ext.ASSET_DIR + "/food_labels.txt").exists()
+
 android {
     compileSdkVersion 28
     defaultConfig {
@@ -10,6 +15,9 @@ android {
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
+    lintOptions {
+        abortOnError false
+    }
     buildTypes {
         release {
             minifyEnabled false
@@ -18,6 +26,7 @@ android {
     }
     aaptOptions {
         noCompress "tflite"
+        noCompress "lite"
     }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
@@ -27,8 +36,12 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
     implementation 'com.android.support:appcompat-v7:28.0.0'
     implementation 'com.android.support:cardview-v7:28.0.0-alpha3'
+    implementation 'com.android.support:support-v13:28.0.0'
     implementation 'com.android.support:design:28.0.0'
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
     implementation 'de.hdodenhof:circleimageview:2.1.0'
@@ -47,4 +60,8 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     api 'com.clarifai.clarifai-api2:core:2.3.0'
     //implementation 'com.android.support:support-v7:28.0.0'
+
+    implementation 'com.android.support:support-annotations:28.0.0'
+
+    implementation 'org.tensorflow:tensorflow-lite:+'
 }

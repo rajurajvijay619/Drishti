@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">Drishti</string>
     <string name="feature1">OCR</string>
-    <string name="feature2">SmartAlarm</string>
-    <string name="feature3">Diet Tracker</string>
+    <string name="feature2">Wake me up!</string>
+    <string name="feature3">Food Recognition</string>
     <string name="feature4">Object Recognition</string>
 
     <string name="ok">OK</string>
@@ -37,4 +37,8 @@
     <string name="tflite">tflite</string>
     <string name="nnapi">NNAPI</string>
     <string name="threads">Threads:</string>
+
+    <string name="picture">Picture</string>
+
+
 </resources>

@@ -13,6 +13,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.android.tflitecamerademo.CameraActivity;
 import com.google.android.gms.samples.vision.ocrreader.OcrCaptureActivity;
 
 import org.tensorflow.lite.examples.classification.ClassifierActivity;
@@ -60,7 +61,11 @@ public class MainActivity extends AppCompatActivity {
                                 Intent itt = new Intent(MainActivity.this, ClassifierActivity.class);
                                 startActivity(itt);
                                 break;
-
+                            case R.id.nav_diet:
+                                Log.i(TAG,"Food recognition");
+                                Intent ittt = new Intent(MainActivity.this, CameraActivity.class);
+                                startActivity(ittt);
+                                break;
                         }
 
 //                        return  true;

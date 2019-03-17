@@ -13,4 +13,5 @@
     <color name="pink">#fe104d</color>
     <color name="semi_transparent">#66000000</color>
     <color name="black_overlay">#66000000</color>
+    <color name="control_background">#cc4285f4</color>
 </resources>
