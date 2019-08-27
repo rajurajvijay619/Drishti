@@ -1,4 +1,4 @@
-package com.example.dashboarddesign;
+package com.example.drishti;
 
 import android.app.AlarmManager;
 import android.app.PendingIntent;
@@ -8,14 +8,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
-import android.Manifest;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
-import java.io.IOException;
-import java.util.Locale;
 
 public class StartActivity extends AppCompatActivity {
     EditText date,hour,minute,object;

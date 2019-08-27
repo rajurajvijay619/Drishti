@@ -57,7 +57,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.dashboarddesign.R;
+import com.example.drishti.R;
 
 import java.io.IOException;
 import java.util.ArrayList;

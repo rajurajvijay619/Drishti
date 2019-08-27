@@ -1,4 +1,4 @@
-package com.example.dashboarddesign;
+package com.example.drishti;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

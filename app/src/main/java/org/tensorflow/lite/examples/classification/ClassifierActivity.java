@@ -27,7 +27,7 @@ import android.util.Log;
 import android.util.Size;
 import android.util.TypedValue;
 
-import com.example.dashboarddesign.R;
+import com.example.drishti.R;
 
 import java.io.IOException;
 import java.util.List;

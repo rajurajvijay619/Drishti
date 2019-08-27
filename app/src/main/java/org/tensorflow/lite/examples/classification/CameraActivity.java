@@ -52,7 +52,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.dashboarddesign.R;
+import com.example.drishti.R;
 
 import java.nio.ByteBuffer;
 import java.util.List;

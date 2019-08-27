@@ -1,4 +1,4 @@
-package com.example.dashboarddesign;
+package com.example.drishti;
 
 import org.junit.Test;
 

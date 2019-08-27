@@ -32,7 +32,7 @@ import android.view.TextureView;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.dashboarddesign.R;
+import com.example.drishti.R;
 
 import java.io.IOException;
 import java.util.List;

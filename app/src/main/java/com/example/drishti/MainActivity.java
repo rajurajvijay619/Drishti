@@ -1,4 +1,4 @@
-package com.example.dashboarddesign;
+package com.example.drishti;
 
 import android.content.Intent;
 import android.support.design.widget.NavigationView;

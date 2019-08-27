@@ -53,7 +53,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
-import com.example.dashboarddesign.R;
+import com.example.drishti.R;
 
 import java.util.ArrayList;
 import java.util.Arrays;
