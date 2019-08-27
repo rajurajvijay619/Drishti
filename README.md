@@ -3,7 +3,7 @@
 ![Drishti icon](images/drishti_icon.png)
 
 ## Features : 
-	![Drishti features](images/drishti_features.png)
+![Drishti features](images/drishti_features.png)
 	- OCR - Optical Character Recognition
 		- Can aide the visually impaired , digitize paper documents
 	- StubbornAlarm
