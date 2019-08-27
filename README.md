@@ -3,7 +3,7 @@
 <img alt="Drishti icon" src="images/drishti_icon.png" width="200px" height="200px" />
 
 ## Features : 
-<img alt="Drishti features" src="images/drishti_features.png" width="300px" height="450px" />
+<img alt="Drishti features" src="images/drishti_features.png" width="450px" height="300px" />
 
 - **OCR** - Optical Character Recognition
 	- Can aide the visually impaired , digitize paper documents
