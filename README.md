@@ -1,9 +1,9 @@
 # DRISHTI - Image Analysis Android Application
 
-![Drishti icon](images/drishti_icon.png =800x600)
+<img alt="Drishti icon" src="images/drishti_icon.png" style="width:800px;height:600px" />
 
 ## Features : 
-![Drishti features](images/drishti_features.png =800x600)
+<img alt="Drishti features" src="images/drishti_features.png" style="width:800px;height:600px" />
 
 	- OCR - Optical Character Recognition
 		- Can aide the visually impaired , digitize paper documents
